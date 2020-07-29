@@ -93,6 +93,7 @@ main,
   width: 100%;
   float: left;
   position: relative;
+  
 }
 
 button.slick-prev {
@@ -174,6 +175,7 @@ li.slick-active button {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 
@@ -212,6 +214,7 @@ h3 {
   background-color: #eeeeee;
 }
 .bloco-imagens-texto:before {
+  /*Pseudo Elemento*/
   width: 100%;
   display: inline-block;
   content: '';
@@ -222,6 +225,8 @@ h3 {
   background-position: center;
 }
 .bloco-imagens-texto:after {
+  /*Pseudo Elemento*/
+
   width: 100%;
   display: inline-block;
   content: '';
@@ -242,7 +247,7 @@ vertical-align: middle;
 .col-4 img:hover {
   margin-top: 10px!important;
   position: relative!important;
-}
+} 
 
 .bloco-logos {
   height: 170px;
@@ -282,6 +287,8 @@ vertical-align: middle;
 }
 
 .clock:before {
+  /*Pseudo Elemento*/
+
   content: '';
   width:  15px;
   height: 15px;
@@ -311,3 +318,33 @@ vertical-align: middle;
   background-image: url('../img/telefoneico.png');
 }  
 
+.subir-img{
+  
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1); 
+}
+
+.subir-img:hover{
+  box-shadow: 0px 0px 90px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+}
+
+.slider-principal img{
+  height: 454;
+  width: 1366;
+
+}
